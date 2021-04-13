@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DJ Ashish</title>
+        <script>
+            function showCoords(event) {
+            var x = event.clientX;
+            var y = event.clientY;
+            // document.write("X coords: " + x + ", Y coords: " + y);
+            // document.getElementById("demo").innerHTML = coords;
+            if(x>=508 && x<=607 && y>=70 && y<=118){
+                // alert("leftdrum");
+                // document.getElementById("demo").innerHTML="crash cymbal";
+                var audio = document.getElementById("crashcymbal");
+                audio.play();
+            }
+            if(x>=704 && x<=807 && y>=81 && y<=128){
+                // document.getElementById("demo").innerHTML="ride cymbal";
+                var audio = document.getElementById("ridecymbal");
+                audio.play();
+            }
+            if(x>=460 && x<=563 && y>=158 && y<=196){
+                // document.getElementById("demo").innerHTML="High hat";
+                var audio = document.getElementById("highhat");
+                audio.play();
+            }
+            if(x>=557 && x<=647 && y>=201 && y<=259){
+                // document.getElementById("demo").innerHTML="high tom";
+                var audio = document.getElementById("hightom");
+                audio.play();
+            }
+            if(x>=666 && x<=756 && y>=205 && y<=264){
+                // document.getElementById("demo").innerHTML="mid tom";
+                var audio = document.getElementById("midtom");
+                audio.play();
+            }
+            if(x>=507 && x<=623 && y>=282 && y<=324){
+                // document.getElementById("demo").innerHTML="Snare drum";
+                var audio = document.getElementById("snaredrum");
+                audio.play();
+            }
+            if(x>=740 && x<=828 && y>=260 && y<=299){
+                // document.getElementById("demo").innerHTML=" floor tom";
+                var audio = document.getElementById("floortom");
+                audio.play();
+            }
+            if(x>=671 && x<=699 && y>=478 && y<=557){
+                // document.getElementById("demo").innerHTML=" bassdrum";
+                var audio = document.getElementById("bassdrum");
+                audio.play();
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <center><img src="drums.jpg" onclick="showCoords(event)" width="600"></center>
+        <audio id="bassdrum" src="bassdrum.wav"></audio>
+        <audio id="floortom" src="floortom.mp3"></audio>
+        <audio id="snaredrum" src="snaredrum.mp3"></audio>
+        <audio id="midtom" src="mediumtom.mp3"></audio>
+        <audio id="hightom" src="hightom.mp3"></audio>
+        <audio id="highhat" src="highhat.mp3"></audio>
+        <audio id="ridecymbal" src="ridecymbal.mp3"></audio>
+        <audio id="crashcymbal" src="crashcymbal.mp3"></audio>
+    </body>
+</html>
